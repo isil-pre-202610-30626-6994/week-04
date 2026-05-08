@@ -10,5 +10,8 @@ public class App {
         }
 
         Calculator.getMax(15, 15);
+
+        double result = Calculator.executeOperation(13, 6, '$');
+        System.out.println("The result of the operation is: " + result);
     }
 }

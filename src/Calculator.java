@@ -13,5 +13,16 @@ public class Calculator {
         }
 
         System.err.println("The numbers are equal.");
-    } 
+    }
+
+    public static double executeOperation(int a, int b, char operator){
+        return switch (operator) {
+            case '+' -> a + b;
+            case '-' -> a - b;
+            case '*' -> a * b;
+            case '/' -> a / b;
+            case '%' -> a % b;
+            default -> throw new IllegalArgumentException("Invalid operator");
+        };
+    }
 }
