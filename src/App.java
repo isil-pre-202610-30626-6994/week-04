@@ -8,5 +8,7 @@ public class App {
         } else {
             System.out.println("The student has not passed.");
         }
+
+        Calculator.getMax(15, 15);
     }
 }
