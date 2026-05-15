@@ -11,7 +11,14 @@ public class App {
 
         Calculator.getMax(15, 15);
 
-        double result = Calculator.executeOperation(13, 6, '$');
+        double result = Calculator.executeOperation(13, 6, '/');
         System.out.println("The result of the operation is: " + result);
+
+
+        Calculator.displayEvenNumbers(10, 15);
+
+        Calculator.calculateMultiplesOfSix(1,48);
+
+        System.out.println(Calculator.calculateFactorial(10));
     }
 }
